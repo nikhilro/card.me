@@ -23,17 +23,23 @@
                     android:layout_height="wrap_content">
 
                     <SearchView
-                        android:layout_width="344dp"
+                        android:layout_width="335dp"
                         android:layout_height="match_parent">
 
                     </SearchView>
 
                     <ImageButton
                         android:id="@+id/imageButton2"
+                        style="@android:style/Widget.ImageButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:contentDescription="@drawable/ic_profile"
+                        android:background="@null"
+                        android:paddingTop="5pt"
+                        android:paddingBottom="5pt"
+                        android:paddingStart="5pt"
+                        android:paddingEnd="8pt"
                         app:srcCompat="@drawable/ic_profile" />
 
                 </TabWidget>
@@ -43,7 +49,11 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <include
+        layout="@layout/content_main"
+        android:layout_height="527dp"
+        android:layout_width="500dp"
+        tools:layout_editor_absoluteY="40dp" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
