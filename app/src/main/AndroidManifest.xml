@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.harrydong.cardme">
+
+    <uses-sdk android:minSdkVersion="14" />
+
     <uses-permission android:name="android.permission.NFC" />
-    <uses-sdk android:minSdkVersion="14"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -30,6 +35,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.harrydong.cardme.MainActivity" />
         </activity>
+        <activity
+            android:name=".DemoActivity"
+            android:label="@string/title_activity_demo"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

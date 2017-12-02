@@ -29,6 +29,14 @@ import java.util.ArrayList;
 
 import static android.nfc.NdefRecord.createMime;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, NfcAdapter.CreateNdefMessageCallback {
     private NfcAdapter mNfcAdapter;
@@ -48,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         initializeComponents();
 
+
         //provides a notification as a snackbar if no NFC adapter
 //        if (mNfcAdapter == null) {
 //            //mOutputText.setText("This phone has not enabled NFC.");
@@ -60,8 +69,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Floating action button clicked!", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(MainActivity.this, DemoActivity.class);
+                startActivity(intent);
+//                Snackbar.make(view, "Floating action button clicked!", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
             }
         });
 
@@ -155,6 +166,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         return super.onOptionsItemSelected(item);
     }
+
+//    public void
 
 //    /** Called when the user taps the Send button */
 //    public void sendMessage(View view) {

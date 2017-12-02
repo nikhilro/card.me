@@ -1,6 +1,7 @@
 package com.harrydong.cardme;
 
 import java.util.ArrayList;
+import android.graphics.Bitmap;
 
 public class Contact {
     private String mName;
@@ -37,3 +38,4 @@ public class Contact {
         return contacts;
     }
 }
+
