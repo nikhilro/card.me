@@ -63,8 +63,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Floating action button clicked!", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(MainActivity.this, DemoActivity.class);
+                startActivity(intent);
+//                Snackbar.make(view, "Floating action button clicked!", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
             }
         });
     }
@@ -146,6 +148,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         return super.onOptionsItemSelected(item);
     }
+
+//    public void
 
 //    /** Called when the user taps the Send button */
 //    public void sendMessage(View view) {
