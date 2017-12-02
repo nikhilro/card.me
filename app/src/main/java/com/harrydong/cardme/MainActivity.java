@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         initializeComponents();
 
+
         //provides a notification as a snackbar if no NFC adapter
         if (mNfcAdapter == null) {
             //mOutputText.setText("This phone has not enabled NFC.");
