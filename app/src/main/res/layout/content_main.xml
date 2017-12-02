@@ -12,11 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-<<<<<<< HEAD
-
-</android.support.constraint.ConstraintLayout>
-=======
     <ScrollView
         android:layout_width="364dp"
         android:layout_height="438dp"
@@ -122,4 +117,3 @@
 
     </android.support.v7.widget.RecyclerView>
 </LinearLayout>
->>>>>>> 5d51d6bb4780e1adcdefa3187dc4689acf0d3495
