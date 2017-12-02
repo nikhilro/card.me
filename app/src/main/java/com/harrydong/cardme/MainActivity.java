@@ -139,9 +139,9 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Create
     public NdefMessage createNdefMessage(NfcEvent event) {
         //MAKE SURE mInputField is initialized
         String text = (mInputField.getText().toString());
+        Log.i("i",text);
         return new NdefMessage(
-                new NdefRecord[]{createMime(
-                        "application/vnd.com.example.android.beam", text.getBytes())
+                new NdefRecord[]{createMime(MIME_TEXT_PLAIN, text.getBytes())
                 });
     }
 
