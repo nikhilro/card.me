@@ -34,16 +34,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:contentDescription="@drawable/ic_profile"
                         android:background="@null"
-                        android:paddingTop="5pt"
-                        android:paddingBottom="5pt"
-                        android:paddingStart="5pt"
-                        android:paddingEnd="8pt"
+                        android:contentDescription="@drawable/ic_profile"
+                        android:paddingBottom="4pt"
+                        android:paddingEnd="4pt"
+                        android:paddingStart="4pt"
+                        android:paddingTop="4pt"
+                        android:maxHeight="60pt"
                         app:srcCompat="@drawable/ic_profile" />
 
                 </TabWidget>
-
 
             </LinearLayout>
 
@@ -51,8 +51,8 @@
 
     <include
         layout="@layout/content_main"
-        android:layout_height="527dp"
         android:layout_width="500dp"
+        android:layout_height="530dp"
         tools:layout_editor_absoluteY="40dp" />
 
     <android.support.design.widget.FloatingActionButton
@@ -63,7 +63,7 @@
         android:layout_margin="@dimen/fab_margin"
         app:fabSize="normal"
         app:backgroundTint="@color/colorPrimary"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@drawable/ic_plus" />
 
 
 </android.support.design.widget.CoordinatorLayout>
