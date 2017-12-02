@@ -10,6 +10,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+<<<<<<< HEAD
+import android.support.v4.content.ContextCompat;
+=======
+<<<<<<< HEAD
+import android.support.v4.content.ContextCompat;
+=======
 import android.content.Intent;
 import android.nfc.NdefMessage;
 import android.nfc.NdefRecord;
@@ -23,6 +29,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import static android.nfc.NdefRecord.createMime;
+>>>>>>> 9b0144fda4e40e750d2e6975db6b0986e08101ab
+>>>>>>> 821e2ba193e98be4732d73947cb37f5a42c2f335
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, NfcAdapter.CreateNdefMessageCallback {
@@ -34,8 +42,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.id.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+<<<<<<< HEAD
+        Toolbar.setOverflowIcon(ContextCompat.getDrawable(getApplicationContext(),R.drawable.ic_launcher_background));
+=======
+        Toolbar.setOverflowIcon(ContextCompat.getDrawable(getApplicationContext(), R.drawable.profile));
+>>>>>>> 821e2ba193e98be4732d73947cb37f5a42c2f335
         setSupportActionBar(toolbar);
         View contentView = findViewById(R.id.toolbar);
 
@@ -56,7 +69,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+<<<<<<< HEAD
+                Snackbar.make(view, "This is a snackbar", Snackbar.LENGTH_LONG)
+=======
                 Snackbar.make(view, "Floating action button clicked!", Snackbar.LENGTH_LONG)
+>>>>>>> 821e2ba193e98be4732d73947cb37f5a42c2f335
                         .setAction("Action", null).show();
             }
         });
