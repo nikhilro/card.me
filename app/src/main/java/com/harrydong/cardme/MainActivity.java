@@ -135,4 +135,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         return super.onOptionsItemSelected(item);
     }
+
+//    /** Called when the user taps the Send button */
+//    public void sendMessage(View view) {
+//        // Do something in response to button
+//    }
 }
