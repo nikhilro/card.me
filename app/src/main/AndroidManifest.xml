@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.harrydong.cardme">
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-sdk android:minSdkVersion="14"/>
 
     <application
         android:allowBackup="true"
