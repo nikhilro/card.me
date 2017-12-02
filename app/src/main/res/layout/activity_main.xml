@@ -51,9 +51,9 @@
 
     <include
         layout="@layout/content_main"
-        android:layout_width="500dp"
-        android:layout_height="530dp"
-        tools:layout_editor_absoluteY="40dp" />
+        android:layout_width="400dp"
+        android:layout_height="650dp"
+        tools:layout_editor_absoluteY="80dp" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
