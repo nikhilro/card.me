@@ -1,4 +1,4 @@
-package com.example.activity;
+package com.harrydong.cardme;
 
 
 import java.nio.charset.Charset;
