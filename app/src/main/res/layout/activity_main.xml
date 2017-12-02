@@ -23,43 +23,25 @@
                 <TabWidget
                     android:id="@android:id/tabs"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content">
 
                     <SearchView
+                        android:layout_width="344dp"
+                        android:layout_height="match_parent">
+
+                    </SearchView>
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
                         android:layout_width="wrap_content"
-                        android:layout_height="56dp" />
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@drawable/ic_profile"
+                        app:srcCompat="@drawable/ic_profile" />
+
                 </TabWidget>
 
-                <FrameLayout
-                    android:id="@android:id/tabcontent"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
 
-                    <LinearLayout
-                        android:id="@+id/ "
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/ "
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/cards"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                    </LinearLayout>
-
-                </FrameLayout>
             </LinearLayout>
         </TabHost>
 
@@ -73,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:fabSize="40"
+        app:fabSize="normal"
         app:srcCompat="@drawable/camera" />
 
 </android.support.design.widget.CoordinatorLayout>
