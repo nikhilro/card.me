@@ -1,5 +1,6 @@
 package com.harrydong.cardme;
 
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -25,7 +26,21 @@ public class ViewActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
+
+    Contact userInfo = new Contact.ContactBuilder()
+            .firstName("")
+            .lastName("")
+            .phone("")
+            .address("")
+            .company("")
+            .position("")
+            .facebook("")
+            .linkedin("")
+            .github("")
+            .twitter("")
+            .build();
+
 
 }

@@ -23,6 +23,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import static android.nfc.NdefRecord.createMime;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+import com.google.gson.Gson;
+
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, NfcAdapter.CreateNdefMessageCallback {
     private NfcAdapter mNfcAdapter;
