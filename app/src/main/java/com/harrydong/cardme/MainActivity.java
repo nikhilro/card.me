@@ -9,9 +9,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-<<<<<<< HEAD
 import android.support.v4.content.ContextCompat;
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> d7a78ef0bde5706b1e97b4bf404f088e2f7160c3
 import android.content.Intent;
 import android.nfc.NdefMessage;
 import android.nfc.NdefRecord;
@@ -25,7 +27,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import static android.nfc.NdefRecord.createMime;
+<<<<<<< HEAD
 >>>>>>> 9b0144fda4e40e750d2e6975db6b0986e08101ab
+=======
+
+>>>>>>> d7a78ef0bde5706b1e97b4bf404f088e2f7160c3
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, NfcAdapter.CreateNdefMessageCallback {
@@ -37,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.id.layout.activity_main);
+        setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         Toolbar.setOverflowIcon(ContextCompat.getDrawable(getApplicationContext(), R.drawable.profile));
         setSupportActionBar(toolbar);
