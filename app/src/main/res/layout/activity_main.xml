@@ -11,16 +11,8 @@
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            />
 
-
-            <LinearLayout
+        <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
@@ -31,27 +23,37 @@
                     android:layout_height="wrap_content">
 
                     <SearchView
-                        android:layout_width="344dp"
+                        android:layout_width="335dp"
                         android:layout_height="match_parent">
 
                     </SearchView>
 
                     <ImageButton
                         android:id="@+id/imageButton2"
+                        style="@android:style/Widget.ImageButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@null"
                         android:contentDescription="@drawable/ic_profile"
+                        android:paddingBottom="4pt"
+                        android:paddingEnd="4pt"
+                        android:paddingStart="4pt"
+                        android:paddingTop="4pt"
+                        android:maxHeight="60pt"
                         app:srcCompat="@drawable/ic_profile" />
 
                 </TabWidget>
-
 
             </LinearLayout>
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <include
+        layout="@layout/content_main"
+        android:layout_width="400dp"
+        android:layout_height="650dp"
+        tools:layout_editor_absoluteY="80dp" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -61,7 +63,7 @@
         android:layout_margin="@dimen/fab_margin"
         app:fabSize="normal"
         app:backgroundTint="@color/colorPrimary"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@drawable/ic_plus" />
 
 
 </android.support.design.widget.CoordinatorLayout>
