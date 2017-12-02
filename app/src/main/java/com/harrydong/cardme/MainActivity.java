@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView mOutputText;
     private EditText mInputField;
 
+    //this method runs when the app is opened: the "setup" method
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +46,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Snackbar.make(contentView,"No NFC adapter found.",Snackbar.LENGTH_SHORT);
         }
 
+        //creates the round button in the corner and assigns a listener to it
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,7 +68,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mNfcAdapter = NfcAdapter.getDefaultAdapter(this);
     }
-
 
 
     @Override
@@ -93,15 +95,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mNfcAdapter.disableForegroundDispatch(this);
     }
 
-    //this is a function which will be tied to a button
+    //this is a function which will be tied to a button to send an NFC message
     @Override
     public void onClick(View v) {
         //send message
+        //i dont know if this actually works of if the callback needs to be the function below this function
         mNfcAdapter.setNdefPushMessageCallback(this, this);
     }
 
+    //this function should run when another NFC-enabled device is in range
     @Override
     public NdefMessage createNdefMessage(NfcEvent event) {
+        //MAKE SURE mInputField is initialized
         String text = (mInputField.getText().toString());
         return new NdefMessage(
                 new NdefRecord[]{createMime(
