@@ -36,8 +36,12 @@
                 android:value="com.harrydong.cardme.MainActivity" />
         </activity>
         <activity
-            android:name=".DemoActivity"
-            android:label="@string/title_activity_demo"
+            android:name=".DemoNik"
+            android:label="@string/title_activity_demo_nik"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DemoSong"
+            android:label="@string/title_activity_demo_song"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -3,4 +3,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_view">ViewActivity</string>
     <string name="title_activity_demo">DemoActivity</string>
+    <string name="title_activity_demo_nik">DemoNik</string>
+    <string name="title_activity_demo_song">DemoSong</string>
 </resources>
