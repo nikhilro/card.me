@@ -1,4 +1,4 @@
-package com.example.activity;
+package com.harrydong.cardme;
 
 import io.card.payment.CardIOActivity;
 import io.card.payment.CreditCard;
