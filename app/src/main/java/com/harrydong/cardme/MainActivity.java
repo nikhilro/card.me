@@ -29,18 +29,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        View contentView = findViewById(R.id.toolbar);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
+        //View contentView = findViewById(R.id.toolbar);
 
         initializeComponents();
 
 
         //provides a notification as a snackbar if no NFC adapter
-        if (mNfcAdapter == null) {
-            //mOutputText.setText("This phone has not enabled NFC.");
-            Snackbar.make(contentView,"No NFC adapter found.",Snackbar.LENGTH_SHORT);
-        }
+//        if (mNfcAdapter == null) {
+//            //mOutputText.setText("This phone has not enabled NFC.");
+//            Snackbar.make(contentView,"No NFC adapter found.",Snackbar.LENGTH_SHORT);
+//        }
 
         //creates the round button in the corner and assigns a listener to it
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
