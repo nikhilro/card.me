@@ -27,21 +27,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ViewActivity"
-            android:label="@string/title_activity_view"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.harrydong.cardme.MainActivity" />
-        </activity>
-        <activity
             android:name=".DemoNik"
             android:label="@string/title_activity_demo_nik"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".DemoSong"
             android:label="@string/title_activity_demo_song"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
